@@ -90,12 +90,8 @@ function speakThis(message) {
         speech.text = finalText;
     }
     else if(message.includes('tell me something about you')) {
-        const finalText = "i am a virtual assistant robot based on artificial intelligent i was created using html css bootstrap javascript ajax i am always availabe to help human beings"; 
-        speech.text = finalText;
-    }
-    else if(message.includes('tell me about you')) {
-        const finalText = "i am a virtual assistant robot based on artificial intelligent i was created using html css bootstrap javascript ajax i am always availabe to help human beings"; 
-        speech.text = finalText;
+        const finalText1 = "i am a virtual assistant robot based on artificial intelligent i was created using html css bootstrap javascript ajax i am always availabe to help human beings"; 
+        speech.text = finalText1; 
     }
     else if(message.includes('aftab uddin school & college')) {  
         const finalText = "aftab uddin school and college is an educational institution established by late Alhaj Jahurul Islam "; 
