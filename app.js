@@ -57,7 +57,7 @@ function speakThis(message) {
     speech.text = "It's my fault, I did not understand what you said!"; 
 
     if(message.includes('hey') || message.includes('hello') || message.includes('hi')) {
-        const finalText = "Hello Sir, How can i help you?";  
+        const finalText = "Hello Sir How can i help you?";  
         speech.text = finalText;
     }
 
@@ -82,27 +82,27 @@ function speakThis(message) {
         speech.text = finalText;
     }
     else if(message.includes('bye') || message.includes('bye bye') ||message.includes('good bye')) {
-        const finalText = "bye, i look forward to speaking with you again"; 
+        const finalText = "bye i look forward to speaking with you again"; 
         speech.text = finalText;
     }
     else if(message.includes('who is the most handsome person in the world')) {
-        const finalText = "Its surely Sapnil, he is tall and handsome";  
+        const finalText = "Its surely Sapnil he is tall and handsome";  
         speech.text = finalText;
     }
     else if(message.includes('tell me something about you')) {
-        const finalText = "i am a virtual assistant robot based on artificial intelligent. i was created using html,css,bootstrap,javascript,ajax. i am always availabe to help human beings"; 
+        const finalText = "i am a virtual assistant robot based on artificial intelligent i was created using html css bootstrap javascript ajax i am always availabe to help human beings"; 
         speech.text = finalText;
     }
     else if(message.includes('tell me about you')) {
-        const finalText = "i am a virtual assistant robot based on artificial intelligent. i was created using html,css,bootstrap,javascript,ajax. i am always availabe to help human beings"; 
+        const finalText = "i am a virtual assistant robot based on artificial intelligent i was created using html css bootstrap javascript ajax i am always availabe to help human beings"; 
         speech.text = finalText;
     }
     else if(message.includes('aftab uddin school & college')) {  
-        const finalText = "aftab uddin school & college is an educational institution established by late Alhaj Jahurul Islam "; 
+        const finalText = "aftab uddin school and college is an educational institution established by late Alhaj Jahurul Islam "; 
         speech.text = finalText;
     }
     else if(message.includes('tell me about aftab uddin school & college')) {  
-        const finalText = "aftab uddin school & college is an educational institution established by late Alhaj Jahurul Islam "; 
+        const finalText = "aftab uddin school and college is an educational institution established by late Alhaj Jahurul Islam "; 
         speech.text = finalText;
     }
     else if(message.includes('can you sing?')) {  
