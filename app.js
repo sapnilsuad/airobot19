@@ -31,8 +31,8 @@ function wishMe() {
     }
 }
 
-window.addEventListener('load', ()=>{
-    speak("Activating Atom");
+window.addEventListener('load', ()=>{ 
+    speak("Activating Alpha");
     speak("Going online");
     wishMe();
 })
@@ -54,10 +54,10 @@ btn.addEventListener('click', ()=>{
 function speakThis(message) {
     const speech = new SpeechSynthesisUtterance();
 
-    speech.text = "It's my fault, I did not understand what you said!";
+    speech.text = "It's my fault, I did not understand what you said!"; 
 
-    if(message.includes('hey') || message.includes('hello')) {
-        const finalText = "Hello Sir";
+    if(message.includes('hey') || message.includes('hello') || message.includes('hi')) {
+        const finalText = "Hello Sir, How can i help you?";  
         speech.text = finalText;
     }
 
@@ -73,8 +73,45 @@ function speakThis(message) {
         const finalText = "my responsibility is to serve human";
         speech.text = finalText;
     }
+    else if(message.includes('how old are you')) {
+        const finalText = "I was just born yesterday"; 
+        speech.text = finalText;
+    }
+    else if(message.includes('nice to meet you')) {
+        const finalText = "its nice to meet you too"; 
+        speech.text = finalText;
+    }
+    else if(message.includes('bye') || message.includes('bye bye') ||message.includes('good bye')) {
+        const finalText = "bye, i look forward to speaking with you again"; 
+        speech.text = finalText;
+    }
+    else if(message.includes('who is the most handsome person in the world')) {
+        const finalText = "Its surely Sapnil, he is tall and handsome";  
+        speech.text = finalText;
+    }
+    else if(message.includes('tell me something about you')) {
+        const finalText = "i am a virtual assistant robot based on artificial intelligent. i was created using html,css,bootstrap,javascript,ajax. i am always availabe to help human beings"; 
+        speech.text = finalText;
+    }
+    else if(message.includes('tell me about you')) {
+        const finalText = "i am a virtual assistant robot based on artificial intelligent. i was created using html,css,bootstrap,javascript,ajax. i am always availabe to help human beings"; 
+        speech.text = finalText;
+    }
+    else if(message.includes('aftab uddin school & college')) {  
+        const finalText = "aftab uddin school & college is an educational institution established by late Alhaj Jahurul Islam "; 
+        speech.text = finalText;
+    }
+    else if(message.includes('tell me about aftab uddin school & college')) {  
+        const finalText = "aftab uddin school & college is an educational institution established by late Alhaj Jahurul Islam "; 
+        speech.text = finalText;
+    }
+    else if(message.includes('can you sing?')) {  
+        window.open("https://www.youtube.com/watch?v=ADpdnb-Uof0", "_blank");
+        const finalText = "My singing voice is not so good, if you want I can play a song for youI was just born yesterday"; 
+        speech.text = finalText;
+    }
     else if(message.includes('name')) {
-        const finalText = "My name is Atom";
+        const finalText = "My name is Alpha";
         speech.text = finalText;
     }
     
@@ -87,6 +124,11 @@ function speakThis(message) {
     else if(message.includes('open instagram')) {
         window.open("https://instagram.com", "_blank");
         const finalText = "Opening instagram";
+        speech.text = finalText;
+    }
+    else if(message.includes('open facebook')) {
+        window.open("https://facebook.com", "_blank");
+        const finalText = "Opening facebook"; 
         speech.text = finalText;
     }
 

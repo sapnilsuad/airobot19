@@ -11,7 +11,7 @@
   min-height: 100vh;
   position: relative;
   width: 100%;
-  background: #050117; 
+  background: #000;  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,7 +31,7 @@
 }
 
 .main .image-container .image img {
-  width: 550px;
+  width: 300px;
   align-items: center;
 }
 
@@ -87,5 +87,7 @@
   width: 60%;
   margin: auto;
 }
-
+.main .input {
+  width: 80vw;
+}
 }
